@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Add favicon/logo -->
+  <link rel="icon" type="image/png" href="assests\logo.png">
+</head>
+<body>
+  <div class="card">
+    <div class="lock-icon" id="lock">🔒</div>
+    <h2>Password Strength Checker</h2>
+    <div class="input-group">
+      <input type="password" id="password" placeholder="Enter your password">
+      <span class="toggle" onclick="togglePassword()">👁️</span>
+    </div>
+    <div class="strength-wrapper">
+      <div id="strength-bar"></div>
+    </div>
+    <p id="feedback"></p>
+    <ul id="suggestions"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
